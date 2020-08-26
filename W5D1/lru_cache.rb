@@ -14,8 +14,6 @@ class LRUCache
     
     def add(ele)
         # adds element to cache according to LRU principle
-
-        
         if cache.count < limit
             # if cache.include?(ele)
             #     cache.delete(ele)
