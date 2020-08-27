@@ -5,4 +5,5 @@ class CreatePerson < ActiveRecord::Migration[5.2]
       t.integer :house_id, null: false
     end
   end
+
 end
