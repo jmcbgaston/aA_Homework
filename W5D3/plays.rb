@@ -14,6 +14,14 @@ end
 class Play
   attr_accessor :id, :title, :year, :playwright_id
 
+  def self.find_by_title(title)
+
+  end
+
+  def self.find_by_playwright(name)
+
+  end
+
   def self.all
     data = PlayDBConnection.instance.execute("SELECT * FROM plays")
     data.map { |datum| Play.new(datum) }
@@ -48,4 +56,8 @@ class Play
         id = ?
     SQL
   end
+end
+
+class Playwright
+  
 end
